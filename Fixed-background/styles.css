@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfd4d4;
+}
+.landing{
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+}
+.info{
+    background-color: rgb(235, 233, 233);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100vh;
+}
