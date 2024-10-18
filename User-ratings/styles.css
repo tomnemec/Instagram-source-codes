@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 85%;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-item {
+  margin: 0 0.1rem;
+  list-style: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in;
+}
+.filter-item button {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background: white;
+  overflow: hidden;
+}
+.user-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+.users {
+  width: 85%;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.user-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.info {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+.role {
+  font-size: 1rem;
+  color: gray;
+  margin: 0;
+}
+.rating {
+  display: flex;
+  gap: 0.1rem;
+  color: gold;
+}
+.filter-item button.active {
+  color: white;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.container {
+  display: flex;
+  gap: 3.5rem;
+  transform: translateX(410px);
+  transition: transform 0.5s ease-in;
+}
