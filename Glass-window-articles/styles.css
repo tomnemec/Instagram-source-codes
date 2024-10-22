@@ -16,11 +16,12 @@ body {
   border: 1px solid #bababb;
   backdrop-filter: blur(10px);
   border-radius: 30px;
-  margin: 10px;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 600px;
   height: 500px;
+  overflow-y: auto;
+  gap: 20px;
 }
 .user-info {
   display: flex;
@@ -32,9 +33,51 @@ body {
   font-size: 16px;
   color: white;
 }
-.user-info img {
+.profile {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+}
+.article p {
+  color: white;
+  font-size: 16px;
+  padding: 15px;
+  margin: 0;
+}
+.article-img {
+  padding: 10px;
+  width: 95%;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.action-icons {
+  display: flex;
+  margin-left: 10px;
+  gap: 5px;
+}
+.action-icons button {
+  background: none;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card::-webkit-scrollbar {
+  width: 8px;
+}
+.card::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 10px;
+  margin: 17px;
+}
+.card::-webkit-scrollbar-thumb {
+  background: #bababb;
+  border-radius: 10px;
 }
