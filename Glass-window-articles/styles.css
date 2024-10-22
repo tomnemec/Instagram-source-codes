@@ -1,0 +1,40 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  background-image: url("bg.jpg");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px) contrast(0.8) grayscale(0.2);
+}
+.card {
+  background-color: #6c6e70d8;
+  border: 1px solid #bababb;
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 600px;
+  height: 500px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.name {
+  font-size: 16px;
+  color: white;
+}
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
