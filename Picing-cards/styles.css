@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0f0f0f;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #202020;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  gap: 20px;
+}
+.featured {
+  outline: 1px solid #6bee60;
+  border: 6px solid #0f0f0f;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(150, 145, 145);
+}
+.price {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+.btn-primary {
+  background-color: rgb(41, 40, 40);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+}
+.btn-featured {
+  background-color: #6bee60;
+}
+.text-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.card ul li {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  color: white;
+}
+i {
+  color: #a4a7a3;
+}
+.popular {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #6bee60;
+  color: #0f0f0f;
+  padding: 5px 15px;
+  border-radius: 5px 5px 5px 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
