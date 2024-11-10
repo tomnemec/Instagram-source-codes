@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(252, 252, 252);
+}
+#blob {
+    background-color: #C256AE;
+    width: 300px;
+    height: 300px;
+    border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
+    box-shadow: 0 0 5px #000000;
+    animation: infinite 3s shapeshift;
+}
+@keyframes shapeshift {
+    0% {
+        border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
+    }
+    50% {
+        border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
+    }
+    100% {
+        border-radius: 60% 40% 40% 60% / 60% 40% 60% 40%;
+    }
+}
