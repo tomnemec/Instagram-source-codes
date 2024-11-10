@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn-social {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.btn-social:hover {
+  transform: scale(1.05);
+}
+.soc-label {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.btn-social:hover .soc-label {
+  opacity: 1;
+  top: -32px;
+}
+.fb {
+  background-color: #3b5998;
+  color: white;
+}
+.ig {
+  background-color: #e4405f;
+  color: white;
+}
+.tw {
+  background-color: #1da1f2;
+  color: white;
+}
+.ln {
+  background-color: #0077b5;
+  color: white;
+}
