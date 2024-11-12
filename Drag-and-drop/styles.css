@@ -1,0 +1,80 @@
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    background: rgb(247, 247, 247);
+    display: flex;
+    height: 100vh;
+}
+.card {
+    margin: 0 auto;
+    margin-top: 20rem;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    background: white;
+    border-radius: 1rem;
+    width: 650px;
+    height: fit-content;
+}
+
+.container {
+    padding: 1rem;
+    background: var(--white);
+    border-radius: 1rem;
+    border: 1px solid #E1E1E1;
+}
+
+.group:nth-child(2) {
+    background: var(--primary-light);
+    border: 1px solid var(--primary);
+}
+
+#my-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-height: 14rem;
+}
+#products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-height: 14rem;
+}
+.product-card {
+    position: relative;
+    width: 12rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background: rgb(241, 240, 240);
+    border: 1px solid #E1E1E1;
+}
+
+.product-card:hover {
+    cursor: grab;
+}
+.product-img {
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.product-chosen {
+    border: 1px solid 
+        var(--primary);
+}
+
+.product-drag {
+    opacity: 0;
+}
