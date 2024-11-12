@@ -17,19 +17,16 @@ body {
     width: 650px;
     height: fit-content;
 }
-
 .container {
     padding: 1rem;
     background: var(--white);
     border-radius: 1rem;
     border: 1px solid #E1E1E1;
 }
-
 .group:nth-child(2) {
     background: var(--primary-light);
     border: 1px solid var(--primary);
 }
-
 #my-products {
     display: flex;
     flex-direction: row;
@@ -58,7 +55,6 @@ body {
     background: rgb(241, 240, 240);
     border: 1px solid #E1E1E1;
 }
-
 .product-card:hover {
     cursor: grab;
 }
@@ -68,13 +64,10 @@ body {
     object-fit: cover;
     border-radius: 50%;
 }
-
-
 .product-chosen {
     border: 1px solid 
         var(--primary);
 }
-
 .product-drag {
     opacity: 0;
 }
