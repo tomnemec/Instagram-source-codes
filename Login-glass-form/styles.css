@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("art.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(2px) saturate(150%) contrast(80%) brightness(120%);
+    font-family: 'Poppins', sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;    
+    background: rgba(57, 57, 57, 0.519);
+    backdrop-filter: blur(7px);
+    padding: 40px;
+    width: 320px;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid rgba(213, 212, 212, 0.558);
+}
+form h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+form a{
+    color: #3498db;
+    text-decoration: none;
+    font-size: 14px;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+}
+.form-group label{
+    font-size: 14px;
+}
+.glass-input{
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.126);
+    color: #fff;
+    border-radius: 5px;
+}
+.glass-input[type="checkbox"]{
+    width: auto;
+    margin-right: 10px;
+}
+button{
+    width: 320px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background: #2980b9;
+}
+button:active{
+    transform: scale(0.98);
+}
+.row{
+    margin-block: 5px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
