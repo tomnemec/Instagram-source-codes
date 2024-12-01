@@ -10,7 +10,7 @@
 **git status** <br>
 
 ## Working with Changes
-**git add <file>**                  # Stage a specific file <br>
+**git add <file>**                  <span style="color: gray;"># Stage a specific file</span> <br>
 **git add** .                       # Stage all changes <br>
 **git commit -m "Commit message"**  <br>
 **git commit --amend --no-edit**    # Amend last commit without changing the message <br>
