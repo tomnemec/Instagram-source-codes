@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(112, 193, 244);
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+  animation-delay: var(--delay);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
