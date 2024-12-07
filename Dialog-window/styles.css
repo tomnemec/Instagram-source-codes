@@ -1,0 +1,97 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: rgb(36, 36, 36);
+  font-family: Arial, sans-serif;
+}
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(103, 103, 103);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.btn:hover {
+  transition: all 0.3s ease;
+  scale: 1.1;
+  background: rgb(128, 128, 128);
+}
+.dialog-window {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  padding: 20px;
+  background: gray;
+  opacity: 0;
+}
+.dialog-img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: white;
+}
+.fade-in {
+  animation: fade-in 0.5s ease forwards;
+}
+.fade-out {
+  animation: fade-out 0.5s ease forwards;
+}
+.title {
+  color: white;
+  font-size: 1.5rem;
+}
+.message {
+  color: white;
+  font-size: 1rem;
+}
+.name{
+    color: white;
+    font-size: 1rem;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    50% {
+        opacity: 0.8;
+        scale: 1.1;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    scale: 1;
+  }
+  50% {
+    opacity: 0.8;
+    scale: 1.1;
+  }
+
+  100% {
+    opacity: 0;
+    scale: 0;
+  }
+}
