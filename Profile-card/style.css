@@ -1,0 +1,131 @@
+body {
+  background: rgb(49, 48, 48);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.profile-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+}
+.title {
+  color: white;
+  font-size: 4rem;
+}
+.sub-title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 580px;
+}
+.description {
+  color: rgb(186, 183, 183);
+  font-size: 1.3rem;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.skill-container {
+  position: relative;
+}
+.skill-label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: white;
+  font-size: 1.3rem;
+}
+.skill-point {
+  width: 110px;
+  height: 10px;
+  background: white;
+  border-radius: 10px 10px;
+}
+.social-icon {
+  font-size: 1.3rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgb(225, 225, 225);
+  transition: all 0.3s ease;
+}
+.social-icon:hover {
+  background: rgb(255, 255, 255);
+  scale: 1.05;
+}
+progress {
+  width: 100%;
+  height: 10px;
+  margin-top: 35px;
+  border-radius: 10px 10px;
+  background: rgb(186, 183, 183);
+}
+.gh {
+  color: black;
+}
+.ig {
+  color: #fd1d1d;
+}
+.fb {
+  color: #3b5998;
+}
+
+.progress-container {
+  margin-top: 30px;
+  width: 100%;
+  height: 10px;
+  background: rgb(186, 183, 183);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background: white;
+  width: 0%;
+}
+
+.pr-50 {
+  animation: loadProgress 2s forwards;
+  --progress-width: 50%;
+}
+.pr-60 {
+  animation: loadProgress 2s forwards;
+  --progress-width: 60%;
+}
+.pr-75 {
+  animation: loadProgress 2s forwards;
+  --progress-width: 75%;
+}
+
+@keyframes loadProgress {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--progress-width);
+  }
+}
